@@ -1,13 +1,90 @@
+
 @import 'utility';
 
 $base-text-size: 16px;
 $base-font-family: sans-serif;
 
 html {
+  background-image: url('http://bennettfeely.com/gradients/img/gradient.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
   @include full-height;
 }
 
 body {
-  margin: 0;
+  margin: 50px;
   font: $base-text-size / 1 $base-font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  background-image: url('../styles/trippycopy.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border: 7px solid rgb(75, 75, 75);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.colordisplaybackground {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 20px;
+  background-size: contain;
+  overflow: hidden;
+  // border-radius: 5px;
+}
+
+.swatch {
+  // border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.colorpicker {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(150, 150, 150, 0.45);
+  border-radius: 7px;
+}
+
+.sliders {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 15px;
+  width: 60%;
+}
+
+.colorvalue {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(106, 106, 106);
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
