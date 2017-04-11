@@ -1,8 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import 'utility';
 
 $base-text-size: 16px;
-$base-font-family: sans-serif;
+
 
 html {
   background-image: url('http://bennettfeely.com/gradients/img/gradient.jpg');
@@ -22,6 +22,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+h1 {
+  font-family: 'Ubuntu';
+  font-size: 50px;
+  color: white;
 }
 
 .image {
@@ -49,11 +55,9 @@ body {
   margin: 0 0 20px;
   background-size: contain;
   overflow: hidden;
-  // border-radius: 5px;
 }
 
 .swatch {
-  // border-radius: 5px;
   width: 200px;
   height: 200px;
   margin-bottom: 20px;
@@ -81,10 +85,15 @@ body {
 
 .colorvalue {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: rgb(106, 106, 106);
   width: 200px;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+.slidetitle {
+  display: flex;
+  justify-content: space-between;
 }

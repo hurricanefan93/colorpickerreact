@@ -35,10 +35,22 @@ class App extends Component {
         <Colorvalue hue={this.state.hue}
         saturation={this.state.saturation}
         lightness={this.state.lightness} alpha={this.state.alpha} />
+        <div className='slidetitle'>
+        <p>HUE</p>
         <Input min='0' max='360' onInput={this.handleHueChange} />
+        </div>
+        <div className='slidetitle'>
+        <p>Sat</p>
         <Input min='0' max='100' onInput={this.handleSaturationChange} />
+        </div>
+        <div className='slidetitle'>
+        <p>Lightness</p>
         <Input min='0' max='100' onInput={this.handleLightnessChange} />
+        </div>
+        <div className='slidetitle'>
+        <p>Alpha</p>
         <Input min='0'max='1' step='.01' onInput={this.handleAlphaChange} />
+        </div>
       </div>
     </div>
   }
